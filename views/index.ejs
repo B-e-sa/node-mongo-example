@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> OLÁ, MUNDO!</h1>
+
+    <form action="/" method="post">
+        <input type="text" class="field" name="name" placeholder="Name" title="Insert your name" value=<%= error.name %>>
+        <input type="text" class="field" name="age" placeholder="Age" title="Insert your age" value=<%= error.age %>>
+        <input type="text" class="field" name="gitHub" placeholder="GitHub" title="Insert your GitHub Url" value=<%= error.gitHub %>>
+        <button> Enviar </button>
+    </form>
+
+    <% if(error) {%>
+        <h2><%= error.message %></h2>
+    <% } %>
+
+</body>
+
+</html>

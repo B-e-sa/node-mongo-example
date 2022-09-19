@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
     name: { type: String, required: true },
     age: { type: Number, required: true },
-    gitUrl: String
+    gitHub: String
 })
 
 /*
@@ -18,3 +18,4 @@ const userSchema = new mongoose.Schema({
 * User.find()
 */
 module.exports = mongoose.model("User", userSchema)
+
